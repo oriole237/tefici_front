@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraVente - Vente de Terrains Premium</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">🏞️</div>
+                TerraVente
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#terrains">Terrains</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact" class="contact-btn">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-content fade-in-up">
+            <h1>Trouvez le terrain parfait pour votre projet</h1>
+            <p>Découvrez notre sélection premium de terrains constructibles, agricoles et forestiers dans toute la
+                région</p>
+            <div class="hero-buttons">
+                <a href="#terrains" class="btn-primary">Voir les terrains</a>
+                <a href="#contact" class="btn-secondary">Demander conseil</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <div class="search-form">
+                <h2 class="search-title">Recherchez votre terrain idéal</h2>
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label class="filter-label">Localisation</label>
+                        <input type="text" class="filter-input" placeholder="Ville, département...">
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label">Type de terrain</label>
+                        <select class="filter-select">
+                            <option>Tous les types</option>
+                            <option>Constructible</option>
+                            <option>Agricole</option>
+                            <option>Forestier</option>
+                            <option>Industriel</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label">Surface minimum (m²)</label>
+                        <input type="number" class="filter-input" placeholder="1000">
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label">Prix maximum (€)</label>
+                        <input type="number" class="filter-input" placeholder="100000">
+                    </div>
+                </div>
+                <button class="search-btn">🔍 Rechercher</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terrains Section -->
+    <section class="terrains-section" id="terrains">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Terrains disponibles</h2>
+                <p class="section-subtitle">Une sélection rigoureuse de terrains de qualité pour tous vos projets</p>
+            </div>
+
+            <div class="terrains-grid">
+                <!-- Terrain 1 -->
+                <div class="terrain-card floating">
+                    <div class="terrain-image">
+                        <div class="terrain-badge">Constructible</div>
+                        <div class="terrain-price-tag">89 500 €</div>
+                    </div>
+                    <div class="terrain-info">
+                        <h3 class="terrain-title">Terrain résidentiel - Vue panoramique</h3>
+                        <div class="terrain-location">
+                            📍 Bourg-en-Bresse, Ain (01)
+                        </div>
+                        <div class="terrain-specs">
+                            <div class="spec-item">
+                                <div class="spec-icon">📏</div>
+                                <span>1,250 m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">💰</div>
+                                <span>72 €/m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">🏗️</div>
+                                <span>Viabilisé</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">📋</div>
+                                <span>Permis ok</span>
+                            </div>
+                        </div>
+                        <div class="terrain-actions">
+                            <button class="btn-view">Voir le détail</button>
+                            <button class="btn-favorite">❤️</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terrain 2 -->
+                <div class="terrain-card floating">
+                    <div class="terrain-image" style="background: linear-gradient(135deg, #fbbf24, #f59e0b);">
+                        <div class="terrain-badge" style="background: rgba(251, 191, 36, 0.95); color: #92400e;">
+                            Agricole</div>
+                        <div class="terrain-price-tag">45 000 €</div>
+                    </div>
+                    <div class="terrain-info">
+                        <h3 class="terrain-title">Grande parcelle agricole</h3>
+                        <div class="terrain-location">
+                            📍 Mâcon, Saône-et-Loire (71)
+                        </div>
+                        <div class="terrain-specs">
+                            <div class="spec-item">
+                                <div class="spec-icon">📏</div>
+                                <span>5,000 m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">💰</div>
+                                <span>9 €/m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">🚜</div>
+                                <span>Zone A</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">💧</div>
+                                <span>Point d'eau</span>
+                            </div>
+                        </div>
+                        <div class="terrain-actions">
+                            <button class="btn-view">Voir le détail</button>
+                            <button class="btn-favorite">❤️</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terrain 3 -->
+                <div class="terrain-card floating">
+                    <div class="terrain-image" style="background: linear-gradient(135deg, #059669, #047857);">
+                        <div class="terrain-badge" style="background: rgba(5, 150, 105, 0.95);">Forestier</div>
+                        <div class="terrain-price-tag">125 000 €</div>
+                    </div>
+                    <div class="terrain-info">
+                        <h3 class="terrain-title">Forêt de chênes centenaires</h3>
+                        <div class="terrain-location">
+                            📍 Chalon-sur-Saône, Saône-et-Loire (71)
+                        </div>
+                        <div class="terrain-specs">
+                            <div class="spec-item">
+                                <div class="spec-icon">📏</div>
+                                <span>8,500 m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">💰</div>
+                                <span>15 €/m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">🌳</div>
+                                <span>Chênes</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">🛤️</div>
+                                <span>Accès route</span>
+                            </div>
+                        </div>
+                        <div class="terrain-actions">
+                            <button class="btn-view">Voir le détail</button>
+                            <button class="btn-favorite">❤️</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terrain 4 -->
+                <div class="terrain-card floating">
+                    <div class="terrain-image" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">
+                        <div class="terrain-badge" style="background: rgba(59, 130, 246, 0.95);">Constructible</div>
+                        <div class="terrain-price-tag">156 000 €</div>
+                    </div>
+                    <div class="terrain-info">
+                        <h3 class="terrain-title">Terrain proche centre-ville</h3>
+                        <div class="terrain-location">
+                            📍 Lyon Sud, Rhône (69)
+                        </div>
+                        <div class="terrain-specs">
+                            <div class="spec-item">
+                                <div class="spec-icon">📏</div>
+                                <span>950 m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">💰</div>
+                                <span>164 €/m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">🚇</div>
+                                <span>Transports</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">🏫</div>
+                                <span>Écoles</span>
+                            </div>
+                        </div>
+                        <div class="terrain-actions">
+                            <button class="btn-view">Voir le détail</button>
+                            <button class="btn-favorite">❤️</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terrain 5 -->
+                <div class="terrain-card floating">
+                    <div class="terrain-image" style="background: linear-gradient(135deg, #dc2626, #991b1b);">
+                        <div class="terrain-badge" style="background: rgba(220, 38, 38, 0.95);">Industriel</div>
+                        <div class="terrain-price-tag">280 000 €</div>
+                    </div>
+                    <div class="terrain-info">
+                        <h3 class="terrain-title">Zone industrielle - Logistique</h3>
+                        <div class="terrain-location">
+                            📍 Villefranche-sur-Saône,
+                            Rhône (69)
+                        </div>
+                        <div class="terrain-specs">
+                            <div class="spec-item">
+                                <div class="spec-icon">📏</div>
+                                <span>3,200 m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">💰</div>
+                                <span>87 €/m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">🚛</div>
+                                <span>Accès poids lourds</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">🏭</div>
+                                <span>Zone ZI</span>
+                            </div>
+
+                        </div>
+                        <div class="terrain-actions">
+                            <button class="btn-view">Voir le détail</button>
+                            <button class="btn-favorite">❤️</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Terrain 6 -->
+                <div class="terrain-card floating">
+                    <div class="terrain-image" style="background: linear-gradient(135deg, #dc2626, #991b1b);">
+                        <div class="terrain-badge" style="background: rgba(220, 38, 38, 0.95);">Industriel</div>
+                        <div class="terrain-price-tag">280 000 €</div>
+                    </div>
+                    <div class="terrain-info">
+                        <h3 class="terrain-title">Zone industrielle - Logistique</h3>
+                        <div class="terrain-location">
+                            📍 Villefranche-sur-Saône,
+                            Rhône (69)
+                        </div>
+                        <div class="terrain-specs">
+                            <div class="spec-item">
+                                <div class="spec-icon">📏</div>
+                                <span>3,200 m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">💰</div>
+                                <span>87 €/m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">🚛</div>
+                                <span>Accès poids lourds</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">🏭</div>
+                                <span>Zone ZI</span>
+                            </div>
+                
+                        </div>
+                        <div class="terrain-actions">
+                            <button class="btn-view">Voir le détail</button>
+                            <button class="btn-favorite">❤️</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nos services</h2>
+                <p class="section-subtitle">Accompagnement complet pour vos projets d'achat de terrain</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">🛠️</div>
+                    <h3 class="service-title">Conseil personnalisé</h3>
+                    <p class="service-description">Nos experts vous guident dans le choix du terrain adapté à vos besoins
+                        et contraintes.</p>
+                </div>
+                <div class="service-card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="service-icon">📄</div>
+                    <h3 class="service-title">Assistance administrative</h3>
+                    <p class="service-description">Nous prenons en charge les démarches administratives et juridiques
+                        liées à l'achat.</p>
+                </div>
+                <div class="service-card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="service-icon">🏗️</div>
+                    <h3 class="service-title">Études de faisabilité</h3>
+                    <p class="service-description">Analyse technique et environnementale pour garantir la viabilité de
+                        votre projet.</p>
+                </div>
+                <div class="service-card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="service-icon">🤝</div>
+                    <h3 class="service-title">Négociation & Achat</h3>
+                    <p class="service-description">Nous négocions les meilleures conditions d'achat en votre nom.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer" id="about">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TerraVente</h3>
+                <p>Votre partenaire de confiance pour l'achat de terrains en France. Nous offrons une sélection
+                    exclusive et un accompagnement personnalisé.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#terrains">Terrains</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contactez-nous</h3>
+                <ul>
+                    <li>Email: <a href="#"> </a></li>
+                    <li>Téléphone: <a href="#"> </a></li>
+                    <li>Adresse: 123 Rue de la Terre, 69000 Lyon</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 TerraVente. Tous droits réservés.
+        </div>
+    </footer>
