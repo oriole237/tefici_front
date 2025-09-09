@@ -1,27 +1,14 @@
 import React from 'react';
 import './home.css';
+import Header from './Header';
+import Footer from './Footer';
 
 function Home()  {
     return (
         <div>
             
-            <header className="header">
-                <nav className="nav-container">
-                    <div className="logo">
-                        <div className="logo-icon">🏞️</div>
-                        TerraVente
-                    </div>
-                    <ul className="nav-menu">
-                        <li><a href="#accueil">Accueil</a></li>
-                        <li><a href="#terrains">Terrains</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#contact" className="contact-btn">Contact</a></li>
-                    </ul>
-                    <button className="mobile-menu-btn">☰</button>
-                </nav>
-            </header>
-
+            {/* barre de menu  */}
+            <Header />
         
             <section className="hero" id="accueil">
                 <div className="hero-content fade-in-up">
@@ -335,43 +322,7 @@ function Home()  {
                 </div>
             </section>
             
-            <footer className="footer" id="about">
-                <div className="footer-content">
-                    <div className="footer-section">
-                        <h3>TerraVente</h3>
-                        <p>Votre partenaire de confiance pour l'achat de terrains en France. Nous offrons une sélection
-                            exclusive et un accompagnement personnalisé.</p>
-                    </div>
-                    <div className="footer-section">
-                        <h3>Liens utiles</h3>
-                        <ul>
-                            <li><a href="#accueil">Accueil</a></li>
-                            <li><a href="#terrains">Terrains</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div className="footer-section">
-                        <h3>Contactez-nous</h3>
-                        <ul>
-                            <li>Email: <a href="#email"> </a></li>
-                            <li>Téléphone: <a href="#tel"> </a></li>
-                            <li>Adresse: 123 Rue de la Terre, 69000 Lyon</li>
-                        </ul>
-                    </div>
-                    <div className="footer-section">
-                        <h3>Suivez-nous</h3>
-                        <ul>
-                            <li><a href="#Facebook">Facebook</a></li>
-                            <li><a href="#Twitter">Twitter</a></li>
-                            <li><a href="#LinkedIn">LinkedIn</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="footer-bottom">
-                    &copy; 2025 TerraVente. Tous droits réservés.
-                </div>
-            </footer>
+            <Footer /> 
         </div>
     );
 }
