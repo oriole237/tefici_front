@@ -10,7 +10,7 @@ function Home()  {
             {/* barre de menu  */}
             <Header />
         
-            <section className="hero" id="accueil">
+            <section className="hero relative !pt-16 min-h-screen" id="accueil">
                 <div className="hero-content fade-in-up">
                     <h1>Trouvez le terrain parfait pour votre projet</h1>
                     <p>Découvrez notre sélection premium de terrains constructibles, agricoles et forestiers dans toute la

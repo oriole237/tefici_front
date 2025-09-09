@@ -6,7 +6,7 @@ function Header() {
             
             <header className="header">
                 <nav className="nav-container">
-                    <div className="logo">
+                    <div className="logo flex">
                         <div className="logo-icon">🏞️</div>
                         TerraVente
                     </div>
