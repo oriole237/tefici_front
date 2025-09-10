@@ -10,6 +10,7 @@ function Home()  {
             {/* barre de menu  */}
             <Header />
         
+            {/* premier bloc */}
             <section className="hero relative !pt-16 min-h-screen" id="accueil">
                 <div className="hero-content fade-in-up">
                     <h1>Trouvez le terrain parfait pour votre projet</h1>
@@ -22,7 +23,7 @@ function Home()  {
                 </div>
             </section>
 
-            
+            {/* deuxieme bloc (filtre sur les terreians) */}
             <section className="search-section">
                 <div className="search-container">
                     <div className="search-form">
@@ -56,7 +57,7 @@ function Home()  {
                 </div>
             </section>
 
-            
+            {/* troisieme bloc (liste des terrains disponibles) */}
             <section className="terrains-section" id="terrains">
                 <div className="container">
                     <div className="section-header">
@@ -287,7 +288,8 @@ function Home()  {
                     </div>
                 </div>
             </section>
-            
+
+            {/* quatrieme bloc (liste des services) */}
             <section className="services-section" id="services">
                 <div className="container">
                     <div className="section-header">
